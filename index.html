@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tamiris Salgados </title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>Tamiris Salgados</header>
+
+<nav>
+  <button id="btn-fritos" class="active">Salgados Fritos</button>
+  <button id="btn-medalhoes">Medalhões </button>
+  <button id="btn-mini">Mini para Festa</button>
+  <button id="btn-cart-toggle" style="margin-left:auto;">Carrinho 🛒</button>
+</nav>
+<main>
+  <section id="fritos-section" class="items-grid"></section>
+  <section id="medalhoes-section" class="items-grid" style="display:none;"></section>
+  <section id="mini-section" class="items-grid" style="display:none;"></section>
+  
+  
+</main>
+
+<aside id="cart" aria-label="Carrinho de compras">
+  <header>
+    Carrinho
+    <button id="btn-close-cart" aria-label="Fechar carrinho">&times;</button>
+  </header>
+  <div id="cart-items"></div>
+  <div id="cart-footer">
+    <div id="cart-total">Total: R$ 0,00</div>
+    <button id="btn-finalize">Finalizar Compra</button>
+
+    <div id="payment-options">
+      <p>Escolha a forma de pagamento:</p>
+      <label><input type="radio" name="payment" value="dinheiro" checked /> Dinheiro</label>
+      <label><input type="radio" name="payment" value="cartao"> Cartão débito/crédito  </label>
+      <label><input type="radio" name="payment" value="pix"> PIX</label>
+    </div>
+  </div>
+</aside>
+
+<a id="whatsapp" href="https://wa.me/5517991772114" target="_blank" aria-label="Entrar em contato pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.903 11.903 0 0 0 12 0C5.373 0 0 5.373 0 12a11.925 11.925 0 0 0 1.568 6.086L0 24l5.916-1.551A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.205-1.248-6.22-3.48-8.52zM12 21.75c-1.822 0-3.62-.56-5.13-1.62l-.37-.224-3.517.924.938-3.426-.243-.385A9.893 9.893 0 0 1 2.1 12c0-5.5 4.472-10 10-10 2.674 0 5.185 1.04 7.07 2.92A9.952 9.952 0 0 1 22 12c0 5.5-4.472 9.75-10 9.75zm5.508-7.65-1.482-.675c-.197-.09-.416-.135-.63-.135-.238 0-.468.08-.655.23-.195.16-.408.4-.5.57-.08.13-.2.48-.37.885-.063.167-.138.21-.304.132l-1.29-.6c-.34-.163-.59-.335-.838-.56-.285-.26-.22-.4.118-.755.123-.13.3-.32.43-.44.09-.08.11-.135.157-.3.08-.29 0-.5-.103-.67-.197-.308-1.41-3.38-1.732-4.51-.1-.37-.205-.52-.366-.56a.72.72 0 0 0-.42 0c-.2.082-.606.29-.92.43-.313.142-.835.45-.835 1.08 0 .63.855 1.24 1.1 1.33.244.092.42.135.61.218.2.082.27.14.39.235.12.093.163.16.247.264.083.102.07.172.045.28-.024.106-.29.713-.4.97-.11.257-.22.223-.41.16-.197-.062-.84-.3-1.227-.638-.387-.34-.67-.75-.937-1.093-.27-.34-.226-.597-.134-.712.093-.11.41-.55.56-.74.15-.19.2-.273.28-.467.076-.196.038-.365-.02-.512-.057-.15-.52-1.25-.712-1.72-.19-.47-.384-.5-.53-.51-.14-.01-.3 0-.455 0-.156 0-.408.058-.62.28-.21.22-.8.785-.8 1.9 0 1.116.82 2.195.935 2.352.114.157 1.61 2.457 3.9 3.44.54.233.96.373 1.29.48.542.17 1.038.15 1.43.09.44-.068 1.35-.55 1.54-1.08.19-.53.19-.98.133-1.07z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
